@@ -1,0 +1,44 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: content-box;
+}
+
+nav {
+    height :6rem;
+    background-color: violet;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+    
+
+}
+
+#logo {
+    background-image: url(./n-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:100px;
+    height: 80px;
+
+}
+
+#flexbar{
+    background-color: white;
+    height: 60px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 25px;
+    
+
+}
+
+#flexbar li{
+    list-style: none;
+    display: block;
+}
+
