@@ -2,22 +2,29 @@
     margin: 0%;
     padding: 0%;
     box-sizing: content-box;
+    font-family: 'Arimo', sans-serif;
+
 }
 
+
 header {
+      background-image: url(./citrus2.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;  
     height :6rem;
-    background-color: rgb(217, 192, 255);
-    display: flex;
-    flex-direction: row;
+    
+    display: flex;   
     flex-wrap: nowrap;
     justify-content:space-around;
     align-items: center;   
-    border: 2px solid rgb(174, 155, 202);
+    border: 2px solid rgb(78, 165,106);
+    
     
 }
 
 #logo {
-    background-image: url(./n-logo.svg);
+    background-image: url(./n-logo.svg);    
     background-repeat: no-repeat;
     background-size: contain;
     width:100px;
@@ -34,7 +41,7 @@ header {
     align-items: center;
     border-radius: 25px;   
     min-width: 450px;
-    border: 2px solid rgb(197, 155, 202);
+    border: 2px solid rgb(78, 165,106);
     
 }
 
@@ -43,7 +50,7 @@ header {
       min-height: 50px;
       list-style: none;
       border-radius: 25px;
-      border: 1px solid black;
+      
       display: flex;      
       align-items: center;
       justify-content: center;
@@ -51,13 +58,70 @@ header {
         
 }
 
+#frases{
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 25px;
+    
+}
 
 
 #mediaPagina{
+    
+    
+    background-color: rgb(255, 212,202);  
     width: 100%;
     height: 85%;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 84vh;    
+    height: 84vh;    
 }
+
+#bienvenida{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    width: 35rem;
+    height: 25rem;
+    border-radius: 25px 75px;
+}
+
+#portraits {
+    width: 350px;
+    height: 600px;    
+    position: relative;
+    
+    border-radius: 250px;
+}
+
+#pic1{
+    position: absolute;
+    width: 350px;
+    height: 600px;
+    background-image: url(./7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    border-radius: 250px;
+    z-index: 2;
+}
+
+#pic2{
+    position: absolute;
+    margin-left: 2%;
+    width: 350px;
+    height: 600px;
+    background-color: white;        
+    border-radius: 250px;
+    z-index: 1;
+    border: 2px rgb(78, 165,106) double;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(118, 162,147);
+    min-height: 3.4rem;
+ }
