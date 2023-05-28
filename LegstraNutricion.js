@@ -1,23 +1,35 @@
- const Inicio=document.getElementById("home")
+//  const Inicio=document.getElementById("home")
 
 
-Inicio.addEventListener('mouseover',()=>{
-    Inicio.style.backgroundColor='pointer'
-})
+// Inicio.addEventListener('mouseleave')
 
 
-function punteros(nombreDiv,nombreId){
-    nombreDiv=document.getElementById(`${nombreId}`)
+function punteros(nombreDiv){
+    nombreDiv=document.getElementById(`${nombreDiv}`)
     nombreDiv.addEventListener('mouseover',()=>{
         nombreDiv.style.cursor='pointer'
-        nombreDiv.style.backgroundColor="rgb(174, 205,173)"
+        nombreDiv.style.backgroundColor="rgb(181, 200, 238)"
         nombreDiv.style.color="white"
-        nombreDiv.style.border="2px solid rgb(78, 165,106)"
+        nombreDiv.style.border="2px solid cornflowerblue"
     })
+    nombreDiv.addEventListener('mouseleave',()=>{
+        nombreDiv.style.color='black'
+        nombreDiv.style.backgroundColor='white'
+        nombreDiv.style.border="0px solid rgb(78, 165,106)"
 
+    })   
+    
 }
 
-punteros("inicio","home")
-punteros("trabajo","trabajo")
-punteros("servicios","servicios")
-punteros("modTrabajo","modTrabajo")
+punteros("home")
+punteros("trabajo")
+punteros("servicios")
+punteros("modTrabajo")
+
+trabajo.addEventListener('click',()=>{
+    document.getElementById('bienvenida').remove()
+    document.getElementById('portraits').remove()
+    trabajo.style.backgroundColor="rgb(181, 200, 238)"
+    trabajo.style.color="white"
+    trabajo.style.border="2px solid cornflowerblue"
+})
